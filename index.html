@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="example-block">
+        <h2 class="block-title">
+          Simple gallery
+        </h2>
+
+        <div class="simple-gallery">
+          <div class="gallery-view">
+            <button class="gallery-control button-prev" id="simple-gallery-prev">prev</button>
+            <img id="simple-gallery-view" src="mountains_1.png" alt="горы" width="700">
+            <button class="gallery-control button-next" id="simple-gallery-next">next</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="example-block">
+        <h2 class="block-title">
+          Animated gallery
+        </h2>
+
+        <div class="animated-gallery">
+          <div class="gallery-view">
+            <button class="gallery-control button-prev" id="animated-gallery-prev">prev</button>
+            <div class="animated-gallery-view" id="animated-gallery-view"></div>
+            <button class="gallery-control button-next" id="animated-gallery-next">next</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="example-block">
+        <h2 class="block-title">
+          code
+        </h2>
+
+        <div class="code-block">
+          <div class="keyboard-numbers">
+            <div class="keyboard-row">
+              <button class="key" data-key="digit" data-num="7">7</button>
+              <button class="key" data-key="digit" data-num="8">8</button>
+              <button class="key" data-key="digit" data-num="9">9</button>
+            </div>
+            <div class="keyboard-row">
+              <button class="key" data-key="digit" data-num="4">4</button>
+              <button class="key" data-key="digit" data-num="5">5</button>
+              <button class="key" data-key="digit" data-num="6">6</button>
+            </div>
+            <div class="keyboard-row">
+              <button class="key" data-key="digit" data-num="1">1</button>
+              <button class="key" data-key="digit" data-num="2">2</button>
+              <button class="key" data-key="digit" data-num="3">3</button>
+            </div>
+            <div class="keyboard-row">
+              <button class="key key-apply">Open</button>
+              <button class="key" id="clear-code-button">C</button>
+            </div>
+          </div>
+
+          <div class="code-display">
+            <div class="code-digit">.</div>
+            <div class="code-digit">.</div>
+            <div class="code-digit">.</div>
+            <div class="code-digit">.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
